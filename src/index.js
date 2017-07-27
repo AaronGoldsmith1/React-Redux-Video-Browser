@@ -6,10 +6,6 @@ import YT_API from '../api_key.js';
 import SearchBar from './components/search_bar.js';
 import VideoList from './components/video_list.js';
 
-
-
-
-
 class App extends Component {
   constructor(props){
     super(props)
@@ -19,17 +15,14 @@ class App extends Component {
     YTSearch({key: YT_API, term: 'surfboards'}, (videos) => {
       this.setState({videos})
     });
-
-
   }
   render() {
     return (
       <div>
       <SearchBar />
+      <VideoList videos={this.state.videos}/>
       </div>
-    )
-
-
+    );
   }
 }
 

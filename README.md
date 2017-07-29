@@ -1,6 +1,6 @@
 # Youtube Video Browser
 
-###Installation Instructions:
+### Installation Instructions:
 1. download/Clone Repository
 2. cd into main directory
 3. type 'npm start' in terminal
